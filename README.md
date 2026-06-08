@@ -28,8 +28,9 @@ Detection Type: Failed Logon
 
 Executed PowerShell with suspicious flags commonly seen in attacker behavior.
 
+```kql
 powershell -ExecutionPolicy Bypass -NoProfile -Command "whoami; hostname; ipconfig; net user"
-
+```
 Mapped behavior to MITRE ATT&CK:
 
 T1059.001 - Command and Scripting Interpreter: PowerShell
@@ -48,9 +49,9 @@ Configured Wazuh File Integrity Monitoring to detect file creation, modification
 **Network Reconnaissance from Kali Linux**
 
 Used Kali Linux to simulate network reconnaissance against the Windows 11 endpoint.
-
+```kql
 nmap -sV <192.168.10.20>
-
+```
 Mapped behavior to MITRE ATT&CK:
 
 T1046 - Network Service Discovery
