@@ -68,3 +68,6 @@ Configured File Integrity Monitoring to alert on file creation, modification, an
 Simulated network reconnaissance from Kali Linux using Nmap
 
 Practiced SOC-style investigation using Wazuh alerts and event logs
+
+# Diagram
+![LabArchitecture](SIEMLABArchitecture.drawio.png)
